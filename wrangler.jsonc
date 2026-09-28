@@ -1,0 +1,9 @@
+{
+  // Worker name. The custom domain must be attached to THIS worker.
+  "name": "coastlinesips-site",
+  "compatibility_date": "2026-09-27",
+  // Serve the repo root as the website (.assetsignore keeps config files private)
+  "assets": {
+    "directory": "./"
+  }
+}

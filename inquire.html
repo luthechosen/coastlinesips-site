@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inquire | Coastline Sips</title>
+<meta name="description" content="Check availability and request a quote for Coastline Sips mobile mocktail bar.">
+<meta property="og:title" content="Inquire | Coastline Sips">
+<meta property="og:description" content="Check availability and request a quote for Coastline Sips mobile mocktail bar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://coastlinesip.com/inquire.html">
+<meta name="theme-color" content="#103B40">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B9%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="head-inner">
+    <a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="17" r="11" fill="#F2B544"/><path d="M4 26c4-3 8-3 12 0s8 3 12 0 8-3 8 0" fill="none" stroke="#103B40" stroke-width="2.4" stroke-linecap="round"/><path d="M4 32c4-3 8-3 12 0s8 3 12 0 8-3 8 0" fill="none" stroke="#1F6E63" stroke-width="2.4" stroke-linecap="round"/></svg><span>Coastline Sips</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="packages.html">Packages</a>
+      <a href="menu.html">Drink menu</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn btn-solid" href="inquire.html">Inquire</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Check your date</h1>
+    <p class="lede">Tell us about your event and we'll reply with availability and a custom quote.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap inquire-grid">
+    <aside class="direct">
+      <h2>Prefer to email?</h2>
+      <p class="lede">Write to us anytime.</p>
+      <a class="email-big" href="mailto:inquiries@coastlinesip.com">inquiries@coastlinesip.com</a>
+      <button class="btn copy-btn" id="copy-email" type="button">Copy email address</button>
+      <span class="copy-status" id="copy-status" aria-live="polite"></span>
+      <ul>
+        <li>A 50% deposit reserves your date</li>
+        <li>Balance due 7 days before your event</li>
+        <li>Liability insurance included in every package</li>
+      </ul>
+    </aside>
+    <form class="form" id="inquiry-form" novalidate>
+      <h2>Event details</h2>
+      <p>Filling this out opens your email app with everything ready to send.</p>
+      <div class="row">
+        <div class="field"><label for="name">Your name</label><input id="name" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="phone">Phone <span class="opt">(optional)</span></label><input id="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="date">Event date</label><input id="date" type="date" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="type">Event type</label>
+          <select id="type">
+            <option>Wedding</option><option>Bridal shower</option><option>Baby shower</option><option>Birthday</option>
+            <option>Corporate event</option><option>Private party</option><option>Other celebration</option>
+          </select></div>
+        <div class="field"><label for="guests">Guest count</label><input id="guests" type="number" min="1" inputmode="numeric" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="package">Package</label>
+          <select id="package">
+            <option value="">Not sure yet</option><option value="Classic">Classic (up to 30 guests)</option>
+            <option value="Signature">Signature (up to 50 guests)</option><option value="Luxe">Luxe (up to 100 guests)</option>
+          </select></div>
+        <div class="field"><label for="location">Venue or town <span class="opt">(optional)</span></label><input id="location"></div>
+      </div>
+      <div class="field"><label for="message">Tell us about your event <span class="opt">(optional)</span></label><textarea id="message" placeholder="Theme, colors, drinks you love, whether you'll serve alcohol..."></textarea></div>
+      <p class="form-error" id="form-error" role="alert"></p>
+      <button class="btn btn-solid" type="submit">Send my inquiry</button>
+      <p class="form-note" id="form-sent" aria-live="polite">We reply to every inquiry personally.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="17" r="11" fill="#F2B544"/><path d="M4 26c4-3 8-3 12 0s8 3 12 0 8-3 8 0" fill="none" stroke="#103B40" stroke-width="2.4" stroke-linecap="round"/><path d="M4 32c4-3 8-3 12 0s8 3 12 0 8-3 8 0" fill="none" stroke="#1F6E63" stroke-width="2.4" stroke-linecap="round"/></svg><span>Coastline Sips</span></a>
+        <p>A mobile mocktail bar bringing coastal-inspired drinks to weddings, showers, corporate events, and celebrations.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="menu.html">Drink menu</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="inquire.html">Inquire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:inquiries@coastlinesip.com">inquiries@coastlinesip.com</a></li>
+          <li><a href="inquire.html">Check your date</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">&copy; <span id="year">2026</span> Coastline Sips. Fully insured mobile bar service.</div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body></html>

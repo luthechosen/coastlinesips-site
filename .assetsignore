@@ -1,0 +1,6 @@
+wrangler.jsonc
+.assetsignore
+CLAUDE.md
+README.md
+.git
+.DS_Store
