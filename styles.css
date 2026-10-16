@@ -28,7 +28,7 @@ a:hover{color:var(--lagoon-deep)}
 .site-head{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--foam) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .head-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 28px;max-width:var(--maxw);margin:0 auto}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--tide)}
-.logo svg{width:34px;height:34px;flex-shrink:0}
+.logo img{width:40px;height:40px;flex-shrink:0;display:block}
 .logo span{font-family:var(--display);font-size:27px;line-height:1;letter-spacing:.01em}
 .nav{display:flex;align-items:center;gap:30px}
 .nav a{text-decoration:none;color:var(--tide-2);font-size:15px;font-weight:500}
@@ -198,3 +198,8 @@ h3{font-size:28px;line-height:1.1}
   .foot-grid{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* brand logo */
+.foot-logo{display:inline-block}
+.foot-logo img{width:150px;height:auto}
+.cta-logo{display:block;width:130px;height:auto;margin:0 auto 22px}

@@ -4,3 +4,5 @@ CLAUDE.md
 README.md
 .git
 .DS_Store
+.wrangler
+node_modules
